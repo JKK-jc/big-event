@@ -74,7 +74,7 @@ $(function () {
         // console.log(res.token);
         if(res.status !== 0){
           return layui.layer.msg(res.message);
-        }
+        } 
         // 将返回的token值储存在本地
         localStorage.setItem('token',res.token)
         // 登录成功后跳转到首页
