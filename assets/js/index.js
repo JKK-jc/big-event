@@ -46,7 +46,7 @@ function  reAvatar(userInfo) {
         $('.layui-nav-img').hide()
         $('.text-avatar').show().html(name[0].toUpperCase())
     } else{
-        $('.layui-nav-img').show()
+        $('.layui-nav-img').show().prop('src',userInfo.user_pic)
         $('.text-avatar').hide()
     }
 }
