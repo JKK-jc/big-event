@@ -93,6 +93,7 @@ $(function () {
           if (res.status !== 0) {
             return layui.layer.msg(res.message);
           }
+          layui.layer.msg('删除文章分类成功')
           layer.close(index);
           getInitCate();
         },
