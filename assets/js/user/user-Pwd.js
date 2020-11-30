@@ -14,6 +14,8 @@ $(function(){
             if(value !== $('[name = newPwd]').val()){
                 return '两次密码输入不一致'
             }
+            layui.layer.msg('登录失效')
+            location.href = '/login.html'
         }
     })
 

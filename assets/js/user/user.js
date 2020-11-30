@@ -28,7 +28,7 @@ $(function(){
     })
 
     // 监听表单事件
-    $('.layui-form').on('submit',function(e){
+    $('#formInfo').on('submit',function(e){
         e.preventDefault()
         $.ajax({
             type:'post',
